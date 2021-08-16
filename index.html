@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <title>Enkefalos Sidebar Menu</title>
+   <link rel="stylesheet" href="style.css">
+   <!--Box icon link-->
+   <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ </head> 
+ <body>
+     <div class="sidebar">
+       <div class="logo_content">
+         <div class="logo">
+            <img src="logo.png" alt="logo" height="30px" width="30px">
+           <div class="logo_name">EnkefalosIT</div>         
+         </div>
+         <i class='bx bx-menu' id="btn"></i>
+        </div>
+       <ul class="nav_list">
+           <li>
+             <i class='bx bx-search'></i>
+             <input class="search" type="text" placeholder="Search...">
+              <span class="tip">Search</span>  
+           </li>
+           <li>
+               <a href="https://www.enkefalos.com/index.html" target="_blank">
+                <i class='bx bx-home'></i>
+                <span class="link_name">Home</span>
+               </a>
+              <span class="tooltip">Home</span> 
+           </li>
+           <li>
+            <a href="https://www.enkefalos.com/about-us.html" target="_blank">
+                <i class='bx bx-group'></i>
+             <span class="link_name">About Us</span>
+            </a>
+              <span class="tooltip">About Us</span>  
+           </li>
+           <li>
+            <a href="https://www.enkefalos.com/services.html" target="_blank">
+             <i class='bx bx-donate-heart'></i>
+             <span class="link_name">Services</span>
+            </a>
+              <span class="tooltip">Services</span>  
+           </li>
+           <li>
+            <a href="https://www.enkefalos.com/ourwork.html" target="_blank">
+             <i class='bx bx-bulb'></i>
+             <span class="link_name">Our Work</span>
+            </a>
+              <span class="tooltip">Our Work</span>  
+           </li>
+           <li>
+            <a href="https://voicetechprism.com/" target="_blank">
+             <i class='bx bx-user-voice'></i>
+             <span class="link_name">Voice First</span>
+            </a>
+              <span class="tooltip">Voice First</span>  
+          </li>
+          <li>
+            <a href="https://www.enkefalos.com/contact-us.html" target="_blank">
+             <i class='bx bx-phone'></i>
+             <span class="link_name">Contact Us</span>
+            </a>
+             <span class="tooltip">Contact Us</span>  
+           </li>
+         </ul>
+        <div class="media">
+            <ul class="media_list">
+                <li>
+                    <a href="https://www.instagram.com/enkefalos_technologies/" target="_blank">
+                        <i class='bx bxl-instagram-alt'></i>
+                     <span class="link_name">Follow Us</span>
+                    </a>
+                   <span class="tooltip">Follow Us</span>  
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/enkefalosIT" target="_blank">
+                        <i class='bx bxl-facebook-square'></i>
+                     <span class="link_name">Like Us</span>
+                    </a>
+                   <span class="tooltip">Like Us</span>  
+                </li>
+            </ul>
+        </div> 
+     </div>
+     <div class="home_content">
+         <div class="text">
+             Driven By Intellect And Technology
+         </div>
+     </div>    
+     <script>
+         let btn = document.querySelector("#btn");
+         let sidebar = document.querySelector(".sidebar");
+         let searchBtn = document.querySelector("bx-search");
+         
+         btn.onclick = function() {
+              sidebar.classList.toggle("active");
+         }
+     </script>
+ </body> 
+</html>
